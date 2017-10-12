@@ -2,10 +2,10 @@
 ## Introduction
 There are a total of 3 files in this repo:
 1. README.md - This file, which explains what each of the files contains or does.
-2. CodeBook.md - The codebook for the data, describing the variables, the data, and the transformations performed to clean up the data.
+2. CodeBook.md - The codebook for the data, describing the variables, the data, and the transformations performed on the data.
 3. run_analysis.R - The R script used to clean up data and write two files:
-  a. A tidy, merged data set named "tidydata.csv" containing only measurements of the mean or standard deviation for each measurement
-  b. An independent data set "tidydata2.csv" containing averages of each measured variable grouped by activity and subject
+  + A tidy, merged data set named "tidydata.csv" containing only measurements of the mean or standard deviation for each measurement
+  + An independent data set "tidydata2.csv" containing averages of each measured variable grouped by activity and subject
 
 ## Running the Script
 **Pre-requisites:**
