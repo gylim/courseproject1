@@ -30,8 +30,8 @@ patterns <- c("^t{1}","^f{1}", "BodyBody", "Acc", "Gyro", "Mag", "gravity","Freq
 replacements <- c("time", "frequency","Body","Accelerometer", "Gyroscope", "Magnitude", "Gravity","frequency")
 names(meansd) <- mgsub(patterns, replacements, names(meansd), fixed = F)
 names(meansd) <- gsub(".","",names(meansd), fixed = T)
-write_csv(meansd, "./tidydata.csv")
+write.table(meansd,"./tidydata.txt", row.names = F)
 
 ## Group by subject and activity and apply mean function to remaining columns to generate newdataset
 newdataset <- aggregate(meansd[,3:81], by = list(subject=meansd$subject , activity=meansd$activity), mean)
-write_csv(newdataset, "./tidydata2.csv")
+write.table(newdataset,"./tidydata2.txt", row.names = F)
