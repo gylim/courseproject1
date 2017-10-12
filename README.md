@@ -11,4 +11,5 @@ There are a total of 3 files in this repo:
 **Pre-requisites:**
 * The data from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip must be downloaded and unzipped to a folder named "UCI HAR Dataset" within the working directory
 * dplyr, readr and qdap packages must be installed beforehand. Run ` install.packages(c("readr","qdap","dplyr"))` if necessary.  
+
 After ensuring that the raw data has been downloaded into the correct sub-directory within the working directory, source the script into R and run it.

@@ -15,7 +15,7 @@ The training and test data sets were then merged using `rbind()` to create a sin
 2. `subject`, `activity` and other columns containing mean or standard deviation data were sub-setted from `rawcon` using `select()` to generate a smaller data.frame `meansd`
 3. Variable names in `meansd` were cleaned up using `mgsub()` (to expand abbreviations) and `gsub()` (to remove the period "." character) and the resultant data.frame written with `write_csv()` to "tidydata.csv"
 4. An independent data.frame is generated from `meansd` by using the `aggregate()` function to group the data by `subject` and `activity` before applying the `mean()` function to remaining columns to generate `newdataset`, which is printed to "tidydata2.csv" with `write.csv()`.
-**The pipe operator `%>%` was not used as the `qdap` package masks the function of the operator.
+**The pipe operator `%>%` was not used as the `qdap` package masks the function of the operator.**
 ## Variables
 Out of the original 561 measurements done on the experiment's subjects for the various activities, only those measurements for which a mean or standard deviation were calculated are available in this dataset, a total of 79 measurements not including the `subject` and `activity` columns used to separate the data. Variables with the angle between two vectors were omitted as these values were taken to be irrelevant to the required scope of the assignment. For more information on how each measurement was collected or calculated, please refer to "features_info.txt" in the "./UCI HAR Dataset/" directory.
 ### subject
